@@ -1,0 +1,740 @@
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfNHhZZ2ZRalYzTDNWQ2JXUSc7CiAgICBpZiAoIXdpbmRvdy5fNHhZZ2ZRalYzTDNWQ2JXUSkgewogICAgICAgIHdpbmRvdy5fNHhZZ2ZRalYzTDNWQ2JXUSA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly81LjEtbWViZWwtMS5ydS9qNEZzMkd6MycsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF9RTW1mMU1oS3JMSFhqVjRZID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfUU1tZjFNaEtyTEhYalY0WSAhPT0gJ3VuZGVmaW5lZCcgJiYgX1FNbWYxTWhLckxIWGpWNFkgIT09IG51bGwpIHsKICAgICAgICB2YXIgX3BDV3gxc0RCVkp6ajlnYk0gPSBKU09OLnBhcnNlKF9RTW1mMU1oS3JMSFhqVjRZKTsKICAgICAgICB2YXIgX0ZCV25qOHZyckQ4Ymd4QnQgPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfcENXeDFzREJWSnpqOWdiTS5jcmVhdGVkX2F0ICsgd2luZG93Ll80eFlnZlFqVjNMM1ZDYldRLnR0bCA8IF9GQlduajh2cnJEOGJneEJ0KSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfWXlndDhQYjI2bXNSR1lRSiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF8xZFpMVzR0c3NyQ1RCUTRwID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgX3pOZEo1UEs3NVdZREsxa0QgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF96TmRKNVBLNzVXWURLMWtEICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF96TmRKNVBLNzVXWURLMWtEICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgX3pOZEo1UEs3NVdZREsxa0QgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgX3pOZEo1UEs3NVdZREsxa0QgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF96TmRKNVBLNzVXWURLMWtEICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF96TmRKNVBLNzVXWURLMWtEICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fNHhZZ2ZRalYzTDNWQ2JXUS5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfWXlndDhQYjI2bXNSR1lRSiAhPT0gJ3VuZGVmaW5lZCcgJiYgX1l5Z3Q4UGIyNm1zUkdZUUogJiYgd2luZG93Ll80eFlnZlFqVjNMM1ZDYldRLnVuaXF1ZSkgewogICAgICAgIF96TmRKNVBLNzVXWURLMWtEICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoX1l5Z3Q4UGIyNm1zUkdZUUopOwogICAgfQogICAgaWYgKHR5cGVvZiBfMWRaTFc0dHNzckNUQlE0cCAhPT0gJ3VuZGVmaW5lZCcgJiYgXzFkWkxXNHRzc3JDVEJRNHAgJiYgd2luZG93Ll80eFlnZlFqVjNMM1ZDYldRLnVuaXF1ZSkgewogICAgICAgIF96TmRKNVBLNzVXWURLMWtEICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfMWRaTFc0dHNzckNUQlE0cCk7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fNHhZZ2ZRalYzTDNWQ2JXUS5SX1BBVEggKyBfek5kSjVQSzc1V1lESzFrRDsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
+<!DOCTYPE html>
+<html lang="bg-BG">
+<head ><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="https://#/category/healthy-recipes/" />
+<link rel="alternate" hreflang="bg" href="index.html" />
+<meta name="pinterest-rich-pin" content="false" />
+	<!-- This site is optimized with the Yoast SEO plugin v17.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Здравословни рецепти Archives - Dani&#039;s Cookings</title><style id="rocket-critical-css">html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}article,aside,figure,footer,header,main,nav,section{display:block}a{background-color:transparent}strong{font-weight:bold}img{border:0}svg:not(:root){overflow:hidden}figure{margin:20px 0}input{color:inherit;font:inherit;margin:0}input[type="submit"]{-webkit-appearance:button}input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="search"]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}*,input[type="search"]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.entry:after,.entry-content:after,.nav-primary:after,.site-container:after,.site-header:after,.site-inner:after,.widget:after,.widget-area:after,.wrap:after{clear:both;content:" ";display:table}body{background:#fff;color:#010101;font-family:"Muli",Arial,Helvetica,sans-serif;font-size:100%;font-weight:300;letter-spacing:0.5px;line-height:1.8}a{color:#fb6a4a;text-decoration:none}aside a{text-decoration:underline}a img{margin-bottom:17px}p{margin:5px 0 15px;padding:0}strong{font-weight:600}ul{margin:0;padding:0}h1,h2,h3{font-family:"Karla",Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:3px;line-height:1.3;margin:37px 0 21px;padding:0;text-transform:uppercase}h1{font-size:2em}h2{font-size:1.625em}h3{font-size:1.375em}iframe,img{max-width:100%}img{height:auto}input{border:1px solid #eee;-webkit-box-shadow:0 0 0 #fff;-webkit-box-shadow:0 0 0 #fff;box-shadow:0 0 0 #fff;color:#999;font-weight:300;letter-spacing:0.5px;padding:10px;width:100%}::-moz-placeholder{color:#000}::-webkit-input-placeholder{color:#000}input[type="submit"]{background:#010101;border:1px solid #010101;-webkit-box-shadow:none;box-shadow:none;color:#fff;font-family:"Karla",Arial,Helvetica,sans-serif;font-style:normal;font-weight:700;letter-spacing:2px;padding:7px 17px;text-transform:uppercase;width:auto}input[type="submit"]{letter-spacing:2px}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-results-button{display:none}.site-container{margin:0 auto}.content-sidebar-wrap,.site-inner,.wrap{margin:0 auto;max-width:1170px}.site-inner{background:#fff;margin:0 auto;padding:15px 37px}.content{float:right;width:720px}.content-sidebar .content{float:left}.sidebar-primary{float:right;width:300px}.one-third{float:left;margin-left:2.564102564102564%}.one-third{width:31.623931623931625%}.first{clear:both;margin-left:0}.search-form{background:#fff;border:1px solid #eee;padding:10px}.search-form input{background:#fff url(images/search.svg) center right no-repeat;-webkit-background-size:contain;background-size:contain;border:0;padding:0}.search-form input[type="submit"]{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;padding:0;position:absolute;width:1px}.aligncenter,.aligncenter img{display:block;margin:0 auto 22px}.alignleft{float:left;margin-right:37px;text-align:left}img.alignleft{margin:0 22px 22px 0}.archive-description{margin-bottom:20px}.archive-description{padding:21px 0}.entry-title{margin:0 0 17px;word-wrap:break-word}.entry-title a{color:#010101;text-decoration:none}.screen-reader-text,.screen-reader-shortcut{background:#fff;border:0;clip:rect(0,0,0,0);color:#333;height:1px;overflow:hidden;position:absolute!important;width:1px}.genesis-skip-link li{height:0;list-style:none;width:0}.simple-social-icons ul li:before{content:none!important;padding-right:0!important}img[data-lazy-src]{opacity:0}img.lazyloaded{opacity:1}.simple-grid .entry-title{letter-spacing:1.5px;font-size:1em}.title-area{display:inline-block;margin:0;padding:17px 0;width:320px}.header-image .title-area{padding:0}.site-title{line-height:0.8;margin:0;text-transform:uppercase}.site-title a{color:#010101;font-style:normal}.header-full-width .title-area,.header-full-width .site-title{text-align:center;width:100%}.header-image .site-title a{width:100%}.site-title img{max-width:100%}.genesis-nav-menu{background:#fff;border-bottom:1px solid #eee;border-top:1px solid #eee;clear:both;font-family:"Karla",Arial,Helvetica,sans-serif;font-weight:400;letter-spacing:2px;padding:7px 0;text-align:center;width:100%}.genesis-nav-menu .menu-item{display:inline-block;margin:0;padding:0;text-align:left}.genesis-nav-menu a{color:#010101;display:block;padding:17px 21px;position:relative;text-decoration:none;text-transform:uppercase;min-height:52px}.genesis-nav-menu .sub-menu{border-bottom:5px solid #010101;opacity:0;position:absolute;left:-9999px;width:230px;z-index:2000}.genesis-nav-menu .sub-menu a{background-color:#fff;letter-spacing:1px;padding:20px;position:relative;width:230px}.genesis-nav-menu .search-form{display:inline-block;margin-left:27px;vertical-align:middle;width:auto}.nav-primary{margin:0}.entry{margin-bottom:37px}.entry-header{color:#777;margin:0 0 37px}.simple-grid .entry-header{margin:0 0 17px}.sidebar p:last-child,.sidebar ul{margin:0}.sidebar li{list-style-type:none;margin-bottom:6px;padding:0;word-wrap:break-word}.sidebar ul li:before{content:"\00BB \0020";padding-right:7px}.sidebar ul>li:last-child{margin-bottom:0}.sidebar .widget{border-bottom:1px solid #eee;margin-bottom:37px;padding-bottom:37px}.sidebar a{font-weight:600}@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5){.header-image .site-header{-webkit-background-size:contain!important;background-size:contain!important}}@media only screen and (min-width:1200px){aside{font-size:0.8em}}@media only screen and (max-width:1200px){.site-inner,.wrap{max-width:1040px;overflow:hidden}.content{width:620px}.genesis-nav-menu a{padding:17px}.sidebar-primary{width:300px}}@media only screen and (max-width:1023px){.content,.sidebar-primary,.site-inner,.title-area,.wrap{width:100%}.header-image .site-header .wrap{background-position:center top}.site-inner{padding-left:5%;padding-right:5%}.archive-description,.entry,.sidebar .widget,.site-header{padding:10px 0}.genesis-nav-menu li{float:none}.genesis-nav-menu,.site-header .title-area,.site-title{text-align:center}}@media only screen and (max-width:940px){nav{display:none;position:relative}#genesis-nav-primary{border-bottom:2px solid #CCC}.genesis-nav-menu{border:none}.genesis-nav-menu .menu-item{border-bottom:1px solid #eee;display:block;position:relative;text-align:left}.genesis-nav-menu .sub-menu{border-top:1px solid #eee;clear:both;display:none;opacity:1;position:static;width:100%}.genesis-nav-menu .sub-menu .menu-item:last-child{border-bottom:none}.genesis-nav-menu .sub-menu a{border:none;padding:16px 22px;position:relative;width:auto}.genesis-nav-menu .search-form{border:0;float:right;width:100%;padding:20px 10px}}@media only screen and (max-width:767px){.one-third,.first{clear:none;margin-left:2.564102564102564%;width:48.717948717948715%}.one-third .entry-title{font-size:1em}.odd{clear:both;margin-left:0}.alignleft,img.alignleft{float:none;margin:0 auto 20px}}.wp-block-group{box-sizing:border-box}.wp-block-image{margin:0 0 1em}.wp-block-image img{max-width:100%}.wp-block-image:not(.is-style-rounded) img{border-radius:inherit}.wp-block-image .aligncenter{display:table}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image figure{margin:0}.has-text-align-center{text-align:center}.aligncenter{clear:both}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.wpml-ls-menu-item .wpml-ls-flag{display:inline;vertical-align:baseline}.simple-social-icons svg[class^="social-"]{display:inline-block;width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor}.simple-social-icons{overflow:hidden}.simple-social-icons ul{margin:0;padding:0}.simple-social-icons ul li{background:none!important;border:none!important;float:left;list-style-type:none!important;margin:0 6px 12px!important;padding:0!important}.simple-social-icons ul li a{border:none!important;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;display:inline-block;font-style:normal!important;font-variant:normal!important;font-weight:normal!important;height:1em;line-height:1em;text-align:center;text-decoration:none!important;text-transform:none!important;width:1em}.simple-social-icons ul.aligncenter{text-align:center}.simple-social-icons ul.aligncenter li{display:inline-block;float:none}</style>
+	<link rel="canonical" href="index.html" />
+	<link rel="next" href="page/2/index.html" />
+	<meta property="og:locale" content="bg_BG" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Здравословни рецепти Archives - Dani&#039;s Cookings" />
+	<meta property="og:url" content="https://#/bg/category/healthy-recipes/" />
+	<meta property="og:site_name" content="Dani&#039;s Cookings" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@daniscookings" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://#/bg/#organization","name":"Dani's Cookings","url":"https://#/bg/","sameAs":["https://www.facebook.com/DanisCookings/","https://www.instagram.com/daniscookings/","https://www.youtube.com/channel/UCKum_NnrynG8f3mAYUlaHqg","https://www.pinterest.com/daniscookings/","https://twitter.com/daniscookings"],"logo":{"@type":"ImageObject","@id":"https://#/bg/#logo","inLanguage":"bg-BG","url":"https://#/wp-content/uploads/2021/04/Logo-DC.jpg","contentUrl":"https://#/wp-content/uploads/2021/04/Logo-DC.jpg","width":796,"height":236,"caption":"Dani's Cookings"},"image":{"@id":"https://#/bg/#logo"}},{"@type":"WebSite","@id":"https://#/bg/#website","url":"https://#/bg/","name":"Dani&#039;s Cookings","description":"Food, Photography &amp; Beautiful things","publisher":{"@id":"https://#/bg/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://#/bg/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"bg-BG"},{"@type":"CollectionPage","@id":"https://#/bg/category/healthy-recipes/#webpage","url":"https://#/bg/category/healthy-recipes/","name":"\u0417\u0434\u0440\u0430\u0432\u043e\u0441\u043b\u043e\u0432\u043d\u0438 \u0440\u0435\u0446\u0435\u043f\u0442\u0438 Archives - Dani&#039;s Cookings","isPartOf":{"@id":"https://#/bg/#website"},"breadcrumb":{"@id":"https://#/bg/category/healthy-recipes/#breadcrumb"},"inLanguage":"bg-BG","potentialAction":[{"@type":"ReadAction","target":["https://#/bg/category/healthy-recipes/"]}]},{"@type":"BreadcrumbList","@id":"https://#/bg/category/healthy-recipes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"\u0417\u0434\u0440\u0430\u0432\u043e\u0441\u043b\u043e\u0432\u043d\u0438 \u0440\u0435\u0446\u0435\u043f\u0442\u0438"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='https://scripts.mediavine.com/' />
+<link rel='dns-prefetch' href='https://maps.googleapis.com/' />
+<link rel='dns-prefetch' href='https://maps.gstatic.com/' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://fonts.gstatic.com/' />
+<link rel='dns-prefetch' href='https://ajax.googleapis.com/' />
+<link rel='dns-prefetch' href='https://apis.google.com/' />
+<link rel='dns-prefetch' href='https://google-analytics.com/' />
+<link rel='dns-prefetch' href='https://www.google-analytics.com/' />
+<link rel='dns-prefetch' href='https://ssl.google-analytics.com/' />
+<link rel='dns-prefetch' href='https://youtube.com/' />
+<link rel='dns-prefetch' href='https://api.pinterest.com/' />
+<link rel='dns-prefetch' href='https://cdnjs.cloudflare.com/' />
+<link rel='dns-prefetch' href='https://pixel.wp.com/' />
+<link rel='dns-prefetch' href='https://connect.facebook.net/' />
+<link rel='dns-prefetch' href='https://platform.twitter.com/' />
+<link rel='dns-prefetch' href='https://syndication.twitter.com/' />
+<link rel='dns-prefetch' href='https://platform.instagram.com/' />
+<link rel='dns-prefetch' href='https://s0.wp.com/' />
+<link rel='dns-prefetch' href='https://s1.wp.com/' />
+<link rel='dns-prefetch' href='https://s2.wp.com/' />
+<link rel='dns-prefetch' href='https://s.gravatar.com/' />
+<link rel='dns-prefetch' href='https://0.gravatar.com/' />
+<link rel='dns-prefetch' href='https://2.gravatar.com/' />
+<link rel='dns-prefetch' href='https://1.gravatar.com/' />
+<link rel='dns-prefetch' href='https://stats.wp.com/' />
+
+<link rel="alternate" type="application/rss+xml" title="Dani&#039;s Cookings &raquo; Поток" href="https://#/bg/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dani&#039;s Cookings &raquo; поток за коментари" href="https://#/bg/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dani&#039;s Cookings &raquo; поток за категорията Здравословни рецепти" href="feed/index.html" />
+<link rel='preload'   href='style.css@ver=4.4.0.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<style id='foodie-pro-theme-inline-css' type='text/css'>
+body, .site-description, .sidebar a{color:#333572;}h1.entry-title, .entry-title a, .widgettitle, .recipe-index-search .widgettitle, .footer-widgets .widgettitle{color:#333572;}.entry-meta, .post-info, .post-meta, .site-footer{color:#a8a8a8;}a, .entry-meta a, .post-info a, .post-meta a, .site-footer a, .entry-content a{color:#991e99;}a:hover, .entry-meta a:hover, .post-info a:hover, .post-meta a:hover, .site-footer a:hover{color:#3030cc;}.genesis-nav-menu > li > a{color:#333572;}.genesis-nav-menu > li > a:hover, .genesis-nav-menu > .current-menu-item > a{color:#991e99;}.button, button, .enews-widget input[type="submit"], a.more-link, .more-from-category a, .sidebar .button, .sidebar .more-from-category a{background:#333572;}.button, button, .enews-widget input[type="submit"], a.more-link, .more-from-category a{border-color:#333572;}
+</style>
+<link rel='preload'   href='block-library/style.min.css@ver=5.8.1.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload'   href='assets/dist/style-frontend-pro.2.14.1.css@ver=2.14.1.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload'   href='templates/language-switchers/menu-item/style.min.css@ver=1.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<style id='wpml-menu-item-0-inline-css' type='text/css'>
+.wpml-ls-slot-129.wpml-ls-current-language, .wpml-ls-slot-129.wpml-ls-current-language a, .wpml-ls-slot-129.wpml-ls-current-language a:visited{color:#3030cc;background-color:#ffffff;}.wpml-ls-slot-129.wpml-ls-current-language:hover, .wpml-ls-slot-129.wpml-ls-current-language:hover a, .wpml-ls-slot-129.wpml-ls-current-language a:hover{color:#991e99;background-color:#ffffff;}
+.wpml-ls-menu-item .wpml-ls-flag { display: inline; vertical-align: -webkit-baseline-middle; width: 24px; height: 18px; margin-top: 4px; }
+</style>
+<link rel='preload'   href='css/style.css@ver=3.0.2.css' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<script type='text/javascript' async="async" data-noptimize="1" data-cfasync="false" src='https://scripts.mediavine.com/tags/danis-cookings.js?ver=5.8.1' id='mv-script-wrapper-js'></script>
+<script data-minify="1" type='text/javascript' src='1/wp-content/plugins/simple-social-icons/svgxuse.js@ver=1632422492' id='svg-x-use-js' defer></script>
+<link rel="https://api.w.org/" href="https://#/bg/wp-json/" /><link rel="alternate" type="application/json" href="https://#/bg/wp-json/wp/v2/categories/1657" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://#/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://#/wp-includes/wlwmanifest.xml" /> 
+
+<meta name="generator" content="WPML ver:4.4.12 stt:7,1;" />
+<style id='feast-blockandfront-styles'>.feast-about-author { background-color: #f2f2f2; color: #32373c; padding: 17px; margin-top: 57px; display: grid; grid-template-columns: 1fr 3fr !important; } .feast-about-author h2 { margin-top: 7px !important;} .feast-about-author img{ border-radius: 50%; }aside .feast-about-author { grid-template-columns: 1fr !important; }.wp-block-search .wp-block-search__input { max-width: 100%; }.screen-reader-text { width: 1px; height: 1px; }footer ul li, .site-footer ul li { list-style-type: none; }footer ul li, .site-footer ul li { list-style-type: none; }aside .wp-block-search { display: grid; grid-template-columns: 2fr 1fr; margin: 37px 0;  } aside .wp-block-search__label { display: none; } aside li:before { content: '' !important; }@media only screen and (max-width: 600px) { aside .wp-block-search { grid-template-columns: 1fr; } aside input { min-height: 50px; margin-bottom: 17px;} }.feast-button a { border: 2px solid var(--feast-branding-primary-background); padding: 7px 14px; border-radius: 20px; background: var(--feast-branding-primary); color: var(--feast-branding-primary-background); text-decoration: none !important; font-weight: bold; } .feast-button { padding: 27px 7px; }.feast-box-primary { color: var( --feast-branding-primary ) !important; background: var(--feast-branding-primary-background) !important; padding: 17px !important; margin: 17px 0 !important;  }.feast-box-secondary { color: var( --feast-branding-secondary ) !important; background: var(--feast-branding-secondary-background) !important; padding: 17px !important; margin: 17px 0 !important;  }.feast-box-primary li, .feast-box-secondary li {margin-left: 17px !important; }.feast-checklist li::marker { color: #FFF; } .feast-checklist li:before { content: '✓'; margin-right: 17px; }.schema-faq-question { font-size: 1.2em; display: block; margin-bottom: 7px;} .schema-faq-section { margin: 37px 0; }</style>
+<style id='feast-modern-branding'>:root {  --feast-branding-primary: #3030cc; --feast-branding-primary-background: #ffffff; --feast-branding-secondary: #333572; --feast-branding-secondary-background: #c1c1f2; }</style>
+<style type="text/css">
+	.feast-category-index-list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr) );
+		grid-gap: 17px;
+		list-style: none;
+		list-style-type: none;
+		margin: 17px 0 !important;
+	}
+	.feast-category-index-list li {
+		min-height: 150px;
+		text-align: center;
+		position: relative;
+		list-style: none !important;
+		margin-left: 0 !important;
+		list-style-type: none !important;
+		overflow: hidden;
+	}
+	.feast-category-index-list li a.title { 
+		text-decoration: none; 
+	}
+	.feast-category-index-list-overlay .fsci-title {
+		position: absolute;
+		top: 88%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #FFF;
+		padding: 5px;
+		color: #333;
+		font-weight: bold;
+		border: 2px solid #888;
+		text-transform: uppercase;
+		width: 80%;
+	}
+	.listing-item:focus-within, .wp-block-search__input:focus {outline: 2px solid #555; }
+	.listing-item a:focus, .listing-item a:focus .fsri-title, .listing-item a:focus img { opacity: 0.8; outline: none; }
+	li.listing-item:before { content: "" !important; }
+	.feast-image-frame, .feast-image-border { border: 3px solid #DDD; }
+	.feast-image-round, .feast-image-round img { border-radius: 50%; } 
+	.feast-image-shadow { box-shadow: 3px 3px 5px #AAA; }
+	.feast-line-through { text-decoration: line-through; }
+	.feast-grid-full, .feast-grid-half, .feast-grid-third, .feast-grid-fourth, .feast-grid-fifth { display: grid; grid-gap: 17px; }
+	.feast-grid-full { grid-template-columns: 1fr !important; }
+	.feast-grid-half { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+	.feast-grid-third { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+	.feast-grid-fourth { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+	.feast-grid-fifth { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+	@media only screen and (min-width: 600px)  { 
+		.feast-category-index-list { grid-template-columns: repeat(4, minmax(0, 1fr) ); }
+		.feast-desktop-grid-full { grid-template-columns: 1fr !important; }
+		.feast-desktop-grid-half { grid-template-columns: repeat(2, 1fr) !important; }
+		.feast-desktop-grid-third { grid-template-columns: repeat(3, 1fr) !important; }
+		.feast-desktop-grid-fourth { grid-template-columns: repeat(4, 1fr) !important; }
+		.feast-desktop-grid-fifth { grid-template-columns: repeat(5, 1fr) !important; }
+		.feast-desktop-grid-sixth { grid-template-columns: repeat(6, 1fr) !important; }
+	}
+	@media only screen and (min-width: 1100px) { .full-width-content main.content { width: 1080px; max-width: 1080px; } }
+	@media only screen and (max-width: 600px) { .entry-content .wp-block-image { width: 100% !important; }}
+	@media only screen and (min-width: 1024px) {
+		.feast-full-width-wrapper { width: 100vw; position: relative; left: 50%; right: 50%; margin: 37px -50vw; background: #F5F5F5; padding: 17px 0; }
+		.feast-full-width-wrapper .feast-recipe-index { width: 1140px; margin: 0 auto; }
+		.feast-full-width-wrapper .listing-item { background: #FFF; padding: 17px; }
+	}
+	.home main .wp-block-search { margin: 57px 0; padding: 13px; background: #FFF; }
+	.home main .wp-block-search button { display: none; visibility: hidden; }
+	.home main .wp-block-search__label { position:absolute; left:-10000px; top:auto; }
+	.feast-prev-next { display: grid; grid-template-columns: 1fr;  border-bottom: 1px solid #CCC; margin: 57px 0;  }
+	.feast-prev-post, .feast-next-post { padding: 37px 17px; border-top: 1px solid #CCC; }
+	.feast-next-post { text-align: right; }
+	@media only screen and (min-width: 600px) {
+		.feast-prev-next { grid-template-columns: 1fr 1fr; border-bottom: none; }
+		.feast-next-post { border-left: 1px solid #CCC;}
+		.feast-prev-post, .feast-next-post { padding: 37px; }
+	}
+	@media only screen and (max-width: 1023px) {
+		.content-sidebar .content, .sidebar-primary { float: none; clear: both; }
+	}
+	body { -webkit-animation: none !important; animation: none !important; }
+	summary { display: list-item; }
+</style><style type="text/css" data-source="Grow Social by Mediavine">
+				@media screen and ( max-width : 600px ) {
+					.dpsp-content-wrapper.dpsp-hide-on-mobile,
+					.dpsp-share-text.dpsp-hide-on-mobile,
+					.dpsp-content-wrapper .dpsp-network-label {
+						display: none;
+					}
+					.dpsp-has-spacing .dpsp-networks-btns-wrapper li {
+						margin:0 2% 10px 0;
+					}
+					.dpsp-network-btn.dpsp-has-label:not(.dpsp-has-count) {
+						max-height: 40px;
+						padding: 0;
+						justify-content: center;
+					}
+					.dpsp-content-wrapper.dpsp-size-small .dpsp-network-btn.dpsp-has-label:not(.dpsp-has-count){
+						max-height: 32px;
+					}
+					.dpsp-content-wrapper.dpsp-size-large .dpsp-network-btn.dpsp-has-label:not(.dpsp-has-count){
+						max-height: 46px;
+					}
+				}
+			
+			@media screen and ( max-width : 720px ) {
+				#dpsp-floating-sidebar.dpsp-hide-on-mobile.opened {
+					display: none;
+				}
+			}
+			
+			@media screen and ( max-width : 720px ) {
+				#dpsp-floating-sidebar.dpsp-hide-on-mobile.opened {
+					display: none;
+				}
+			}
+			</style><script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//#/bg/?wordfence_lh=1&hid=6709ECFE52E73407F928CF92B756AD24');
+</script><style type="text/css"> .wprm-comment-rating svg { width: 18px !important; height: 18px !important; } img.wprm-comment-rating { width: 90px !important; height: 18px !important; } .wprm-comment-rating svg path { fill: #3030cc; } .wprm-comment-rating svg polygon { stroke: #3030cc; } .wprm-comment-ratings-container svg .wprm-star-full { fill: #3030cc; } .wprm-comment-ratings-container svg .wprm-star-empty { stroke: #3030cc; }</style><link rel="pingback" href="https://#/xmlrpc.php" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=UA-80067054-1"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80067054-1');
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" />
+  <meta name="theme-color" content="#317EFB"/>
+</head>
+
+<!-- MailerLite Universal -->
+<script type="rocketlazyloadscript">
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '2429381', 'g6j8f4v6h3', 'load');
+</script>
+<!-- End MailerLite Universal -->
+	<style id='feast-increase-content-width'>@media only screen and (min-width: 1200px) { #genesis-content { min-width: 728px; } #content-container { min-width: 728px; }  }</style>
+		<style id='feast-system-fonts'>body {font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;}
+h1,h2,h3,h4,h5,h6 {font-family:-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;}
+</style>
+	<style id='feast-edit-body-font-size'>body { font-size: 18px; }</style><link rel="icon" href="https://#/wp-content/uploads/2020/04/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://#/wp-content/uploads/2020/04/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://#/wp-content/uploads/2020/04/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://#/wp-content/uploads/2020/04/cropped-favicon-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			h1 { font-size: 27px; }
+h2 { font-size: 26px; }
+h3 { font-size: 25px; }
+h4 { font-size: 24px; }
+.single .post h1,h2,h3,h4,h5,h6 {text-transform:none;}
+
+footer {
+	background: #c1c1f2;
+	text-transform: inherit !important
+}
+footer a {text-transform: none}
+
+#feastsearchtoggle{display:none;}
+
+a {
+	text-decoration: none !important;}
+
+@media only screen and (max-width: 359px) { 
+    .site-inner { 
+        padding-left: 10px !important; 
+        padding-right: 10px !important; 
+  } 
+    .wprm-recipe { 
+        border: none !important; 
+        padding-left: 0px !important; 
+        padding-right: 0px !important; 
+  }
+}
+		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+<body class="archive category category-healthy-recipes category-1657 feast-plugin has-grow-sidebar custom-header header-image header-full-width content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-hidden foodie-pro"><div class="site-container"><ul class="genesis-skip-link"><li><a href="index.html#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="index.html#genesis-content" class="screen-reader-shortcut"> Skip to main content</a></li><li><a href="index.html#genesis-sidebar-primary" class="screen-reader-shortcut"> Skip to primary sidebar</a></li></ul><header class="site-header"><div class="wrap"><div class="title-area"><div class="site-title"><a href="https://#/bg/" title="Dani&#039;s Cookings" ><img width="521" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20521%20115'%3E%3C/svg%3E" title="Dani&#039;s Cookings" alt="Dani&#039;s Cookings"  data-pin-nopin="true" data-lazy-src="https://#/wp-content/uploads/2016/10/cropped-Logo-new-2-2.jpg" /><noscript><img width="521" height="115" src="10/cropped-Logo-new-2-2.jpg" title="Dani&#039;s Cookings" alt="Dani&#039;s Cookings"  data-pin-nopin="true" /></noscript></a></div></div></div></header><nav class="nav-primary" aria-label="Main" id="genesis-nav-primary"><div class="wrap"><ul id="menu-pages-bulgarian" class="menu genesis-nav-menu menu-primary"><li id="menu-item-18008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18008"><a href="https://#/bg/about/"><span >За мен</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-18010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18010"><a target="_blank" rel="noopener" href="https://danielalambova.myportfolio.com"><span >Портфолио</span></a></li>
+</ul>
+</li>
+<li id="menu-item-18009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18009"><a href="https://#/bg/work-with-me/"><span >Работете с мен</span></a></li>
+<li id="menu-item-18011" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18011"><a href="https://#/bg/recipe-index/"><span >Рецепти</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-18013" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18013"><a href="https://#/bg/category/layer-cakes/"><span >Торти</span></a></li>
+	<li id="menu-item-20549" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20549"><a href="https://#/bg/category/cakes/"><span >Кексове</span></a></li>
+	<li id="menu-item-18014" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18014"><a href="https://#/bg/category/cheesecakes/"><span >Чийзкейк</span></a></li>
+	<li id="menu-item-20544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20544"><a href="https://#/bg/recipe-index/"><span >Всички рецепти</span></a></li>
+</ul>
+</li>
+<li id="menu-item-18023" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-has-children menu-item-18023"><a href="index.html" aria-current="page"><span >Диетични</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-18024" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18024"><a href="keto-recipes/index.html"><span >Кето рецепти</span></a></li>
+	<li id="menu-item-18025" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18025"><a href="sugar-free/index.html"><span >Без рафинирана захар</span></a></li>
+	<li id="menu-item-18026" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18026"><a href="vegan-recipes/index.html"><span >Веган рецепти</span></a></li>
+	<li id="menu-item-18027" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18027"><a href="gluten-sugar-dairy-free/index.html"><span >Без глутен захар и млечни</span></a></li>
+</ul>
+</li>
+<li id="menu-item-18028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18028"><a href="https://#/bg/cookbook-2019/"><span >Книга</span></a></li>
+<li id="menu-item-wpml-ls-129-en" class="menu-item wpml-ls-slot-129 wpml-ls-item wpml-ls-item-en wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-129-en"><a href="https://#/category/healthy-recipes/"><span ><img width="18" height="12"
+            class="wpml-ls-flag"
+            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2012'%3E%3C/svg%3E"
+            alt="Английски"
+            
+            
+    data-lazy-src="https://#/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" /><noscript><img width="18" height="12"
+            class="wpml-ls-flag"
+            src="res/flags/en.png"
+            alt="Английски"
+            
+            
+    /></noscript></span></a></li>
+<li id="foodie-search" class="foodie-search menu-item"><form class="search-form" method="get" action="https://#/bg/" role="search"><label class="search-form-label screen-reader-text" for="searchform-1">Search</label><input class="search-form-input" type="search" name="s" id="searchform-1" placeholder="Search"><input class="search-form-submit" type="submit" value="Search"><meta content="https://#/bg/?s={s}"></form></li></ul></div></nav><div class="feastmobilenavbar"><div class="feastmenutoggle"><a href="index.html#feastmobilemenu"><?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve" aria-labelledby="menuicon" role="img">
+	<title id="menuicon">menu icon</title>
+	<g id="menu">
+		<path fill="currentColor" d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z"/>
+	</g>
+</svg>
+</a></div><div class="feastmenulogo"><a href="https://#/bg/"><img width="521" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20521%20115'%3E%3C/svg%3E" data-lazy-srcset="https://#/wp-content/uploads/2020/07/retina-mobile-logo.jpg 2x" alt="go to homepage" data-pin-nopin="true" data-lazy-src="https://#/wp-content/uploads/2016/10/Logo-new-2.jpg" /><noscript><img width="521" height="115" src="10/Logo-new-2.jpg" srcset="https://#/wp-content/uploads/2020/07/retina-mobile-logo.jpg 2x" alt="go to homepage" data-pin-nopin="true" /></noscript></a></div><div class="feastsubscribebutton"><a href="https://#/subscribe/"><svg id="svg" version="1.1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" height="30px" width="90px" viewBox="0, 0, 400,62.365591397849464">
+  <title>subscribe</title>
+  <g id="svgg">
+    <path fill="currentColor" id="path0" d="M26.050 5.330 C 19.725 7.308,15.771 12.123,15.771 17.846 C 15.771 25.406,19.962 29.225,32.891 33.446 C 48.466 38.530,48.556 50.896,33.017 50.896 C 25.829 50.896,22.500 48.560,20.505 42.115 C 19.726 39.597,14.337 40.411,14.337 43.046 C 14.337 56.105,41.674 61.606,48.769 49.975 C 54.448 40.665,48.765 31.572,34.767 27.571 C 23.980 24.488,20.269 20.193,23.310 14.313 C 27.257 6.680,43.728 9.562,43.728 17.886 C 43.728 19.171,44.177 19.355,47.312 19.355 C 49.283 19.355,50.896 19.252,50.896 19.127 C 50.896 9.148,37.546 1.734,26.050 5.330 M160.932 4.926 C 143.613 9.505,145.768 26.536,164.445 32.693 C 175.194 36.236,177.778 38.236,177.778 43.011 C 177.778 53.848,156.854 53.818,154.473 42.977 C 153.842 40.106,147.658 39.647,147.686 42.473 C 147.827 56.888,176.357 61.890,183.180 48.696 C 187.688 39.978,182.226 32.186,168.371 27.569 C 156.805 23.715,152.605 17.927,157.885 13.118 C 164.593 7.008,177.778 10.406,177.778 18.244 C 177.778 19.087,178.577 19.355,181.097 19.355 L 184.417 19.355 183.994 16.747 C 182.636 8.383,170.802 2.317,160.932 4.926 M205.522 5.288 C 193.113 9.929,187.498 27.839,193.471 43.728 C 200.113 61.398,225.168 60.783,229.987 42.832 L 230.709 40.143 227.272 40.143 C 224.006 40.143,223.813 40.253,223.393 42.354 C 221.152 53.560,205.804 54.266,200.382 43.412 C 197.373 37.389,197.248 24.155,200.140 17.838 C 205.236 6.706,220.504 7.247,223.462 18.664 C 224.326 21.998,230.667 22.645,230.225 19.355 C 228.759 8.450,216.195 1.295,205.522 5.288 M58.781 24.396 C 58.781 45.482,59.019 47.008,62.941 51.141 C 70.903 59.530,87.303 57.865,93.053 48.085 L 94.982 44.803 95.203 24.910 L 95.424 5.018 92.199 5.018 L 88.974 5.018 88.752 24.194 C 88.469 48.664,87.490 50.887,76.988 50.893 C 66.447 50.900,65.236 48.111,65.234 23.835 L 65.233 5.018 62.007 5.018 L 58.781 5.018 58.781 24.396 M106.093 30.538 L 106.093 56.059 118.100 55.784 C 131.707 55.472,134.341 54.673,138.131 49.704 C 142.597 43.849,140.283 32.689,134.070 30.116 L 131.852 29.197 134.377 27.481 C 140.228 23.505,140.846 14.573,135.646 9.123 C 132.673 6.006,128.030 5.018,116.357 5.018 L 106.093 5.018 106.093 30.538 M240.143 30.466 L 240.143 55.914 243.369 55.914 L 246.595 55.914 246.595 45.520 L 246.595 35.125 252.509 35.126 L 258.423 35.127 264.025 45.521 L 269.628 55.914 273.190 55.914 C 276.653 55.914,276.730 55.869,275.923 54.301 C 275.467 53.414,272.875 48.634,270.163 43.679 C 264.354 33.065,264.551 34.140,268.014 31.954 C 278.032 25.630,275.856 9.891,264.455 6.209 C 261.718 5.325,258.109 5.018,250.455 5.018 L 240.143 5.018 240.143 30.466 M284.588 30.466 L 284.588 55.914 287.814 55.914 L 291.039 55.914 291.039 30.466 L 291.039 5.018 287.814 5.018 L 284.588 5.018 284.588 30.466 M303.226 30.466 L 303.226 55.914 313.953 55.914 C 325.859 55.914,330.021 55.026,333.601 51.722 C 339.739 46.056,339.150 35.284,332.463 30.920 L 329.863 29.224 332.594 26.619 C 336.044 23.329,337.133 19.713,336.111 14.946 C 334.474 7.313,329.244 5.018,313.490 5.018 L 303.226 5.018 303.226 30.466 M348.387 30.466 L 348.387 55.914 364.559 55.914 L 380.732 55.914 380.509 53.226 L 380.287 50.538 367.563 50.342 L 354.839 50.146 354.839 41.202 L 354.839 32.258 365.950 32.258 L 377.061 32.258 377.061 29.749 L 377.061 27.240 365.950 27.240 L 354.839 27.240 354.839 18.996 L 354.839 10.753 367.384 10.753 L 379.928 10.753 379.928 7.885 L 379.928 5.018 364.158 5.018 L 348.387 5.018 348.387 30.466 M129.099 11.862 C 132.543 13.644,133.822 19.465,131.498 22.784 C 129.472 25.675,126.727 26.523,119.390 26.523 L 112.545 26.523 112.545 18.638 L 112.545 10.753 119.749 10.753 C 124.849 10.753,127.579 11.077,129.099 11.862 M263.574 12.151 C 266.573 13.979,267.549 15.950,267.549 20.179 C 267.549 27.041,264.112 29.448,253.584 29.960 L 246.595 30.299 246.595 20.526 L 246.595 10.753 253.943 10.755 C 259.953 10.758,261.706 11.011,263.574 12.151 M328.021 13.122 C 333.818 19.868,328.285 26.523,316.881 26.523 L 310.394 26.523 310.394 18.575 L 310.394 10.626 318.343 10.868 C 326.030 11.103,326.349 11.177,328.021 13.122 M129.773 33.345 C 133.706 35.379,135.094 40.558,133.031 45.495 C 131.463 49.248,128.894 50.179,120.107 50.179 L 112.545 50.179 112.545 41.219 L 112.545 32.258 120.107 32.258 C 125.465 32.258,128.283 32.575,129.773 33.345 M329.093 34.958 C 332.751 39.055,331.571 46.679,326.905 49.092 C 325.435 49.852,322.636 50.179,317.598 50.179 L 310.394 50.179 310.394 41.157 L 310.394 32.135 318.698 32.376 L 327.003 32.616 329.093 34.958 " stroke="none" fill-rule="evenodd"></path>
+  </g>
+</svg>
+</a></div><div class="feastsearchtoggle"><a href="index.html#feastmobilemenu"><svg xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" xml:space="preserve" xmlns:svg="//www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 100 100" aria-labelledby="searchicon" role="img">
+  <title id="searchicon">search icon</title>
+  <g transform="translate(0,-952.36218)">
+    <path fill="currentColor" d="M 40 11 C 24.007431 11 11 24.00743 11 40 C 11 55.9926 24.007431 69 40 69 C 47.281794 69 53.935267 66.28907 59.03125 61.84375 L 85.59375 88.40625 C 86.332786 89.16705 87.691654 89.1915 88.4375 88.4375 C 89.183345 87.6834 89.175154 86.2931 88.40625 85.5625 L 61.875 59.03125 C 66.312418 53.937244 69 47.274551 69 40 C 69 24.00743 55.992569 11 40 11 z M 40 15 C 53.830808 15 65 26.16919 65 40 C 65 53.8308 53.830808 65 40 65 C 26.169192 65 15 53.8308 15 40 C 15 26.16919 26.169192 15 40 15 z " transform="translate(0,952.36218)">
+    </path>
+  </g>
+</svg>
+</a></div></div><div id="feastmobilemenu" class="feastmobilemenu-background" aria-label="main"><div class="mmm-dialog"><div class="mmm-content"><a href="https://#/bg/"><img width="521" height="115" id="mmmlogo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20521%20115'%3E%3C/svg%3E" data-lazy-srcset="https://#/wp-content/uploads/2020/07/retina-mobile-logo.jpg 2x" alt="Homepage link" data-pin-nopin="true" data-lazy-src="https://#/wp-content/uploads/2016/10/Logo-new-2.jpg" /><noscript><img width="521" height="115" id="mmmlogo" src="10/Logo-new-2.jpg" srcset="https://#/wp-content/uploads/2020/07/retina-mobile-logo.jpg 2x" alt="Homepage link" data-pin-nopin="true" /></noscript></a><div id="feast-mobile-search"><form class="search-form" method="get" action="https://#/bg/" role="search"><label class="search-form-label screen-reader-text" for="searchform-2">Search</label><input class="search-form-input" type="search" name="s" id="searchform-2" placeholder="Search"><input class="search-form-submit" type="submit" value="Search"><meta content="https://#/bg/?s={s}"></form></div><ul id="menu-feast-modern-mobile-menu-bulgarian" class="menu"><li id="menu-item-17993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17993"><a href="https://#/bg/in-english/">За Мен</a></li>
+<li id="menu-item-17994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17994"><a href="https://#/bg/recipe-index/">Рецепти</a></li>
+<li id="menu-item-17995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17995"><a href="https://#/bg/work-with-me/">Да работим заедно</a></li>
+<li id="menu-item-19105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19105"><a href="https://#/bg/cookbook-2019/">Моята Книга</a></li>
+<li id="menu-item-20921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20921"><a href="https://#/bg/%d0%b0%d0%b1%d0%be%d0%bd%d0%b0%d0%bc%d0%b5%d0%bd%d1%82/">Абонамент</a></li>
+<li id="menu-item-wpml-ls-1357-en" class="menu-item wpml-ls-slot-1357 wpml-ls-item wpml-ls-item-en wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-1357-en"><a href="https://#/category/healthy-recipes/"><img width="18" height="12"
+            class="wpml-ls-flag"
+            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2012'%3E%3C/svg%3E"
+            alt="Английски"
+            
+            
+    data-lazy-src="https://#/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" /><noscript><img width="18" height="12"
+            class="wpml-ls-flag"
+            src="res/flags/en.png"
+            alt="Английски"
+            
+            
+    /></noscript></a></li>
+</ul><div id="feast-mobile-menu-social-icons"><div id="feast-social"><li id="simple-social-icons-3" class="widget simple-social-icons"><ul class="aligncenter"><li class="ssi-facebook"><a href="https://facebook.com/daniscookings" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-facebook" aria-labelledby="social-facebook-3"><title id="social-facebook-3">Facebook</title><use xlink:href="https://#/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-facebook"></use></svg></a></li><li class="ssi-instagram"><a href="https://www.instagram.com/daniscookings" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-instagram" aria-labelledby="social-instagram-3"><title id="social-instagram-3">Instagram</title><use xlink:href="https://#/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-instagram"></use></svg></a></li><li class="ssi-pinterest"><a href="https://www.pinterest.com/daniscookings" target="_blank" rel="noopener noreferrer"><svg role="img" class="social-pinterest" aria-labelledby="social-pinterest-3"><title id="social-pinterest-3">Pinterest</title><use xlink:href="https://#/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-pinterest"></use></svg></a></li></ul></li>
+</div></div><a href="index.html#" class="closebtn">×</a></div></div></div>	<style>
+		/* Add animation (Chrome, Safari, Opera) */
+		@-webkit-keyframes openmenu {
+		  from {left:-100px;opacity: 0;}
+		  to {left:0px;opacity:1;}
+		}
+		@-webkit-keyframes closebutton {
+		    0% {opacity: 0;}
+		    100% {opacity: 1;}
+		}
+         
+		/* Add animation (Standard syntax) */
+		@keyframes openmenu {
+		  from {left:-100px;opacity: 0;}
+		  to {left:0px;opacity:1;}
+		}
+		@keyframes closebutton {
+		    0% {opacity: 0;}
+		    100% {opacity: 1;}
+		}
+
+		/* The mmm's background */
+		.feastmobilemenu-background {
+			display: none;
+			position: fixed;
+			z-index: 9999;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+
+		/* Display the mmm when targeted */
+		.feastmobilemenu-background:target {
+			display: table;
+			position: fixed;
+		}
+
+		/* The mmm box */
+		.mmm-dialog {
+			display: table-cell;
+			vertical-align: top;
+			font-size: 20px;
+		}
+
+		/* The mmm's content */
+		.mmm-dialog .mmm-content {
+			margin: 0;
+			padding: 10px 10px 10px 20px;
+			float: left;
+			background-color: #FEFEFE;
+			position: fixed;
+			overflow-x: hidden;
+			overflow-y: auto;
+			outline: 0;
+			border-right: 1px #777 solid;
+			border-bottom: 1px #777 solid;
+			text-align: justify;
+			width: 320px;
+			height: 90%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+			/* Add animation */
+			-webkit-animation-name: openmenu; /* Chrome, Safari, Opera */
+			-webkit-animation-duration: 0.6s; /* Chrome, Safari, Opera */
+			animation-name: openmenu;
+			animation-duration: 0.6s;
+		}
+		.mmm-content li {
+		    list-style: none;
+		}
+		#menu-feast-modern-mobile-menu li {
+			min-height: 50px; 
+			margin-left: 5px;
+		    	list-style: none;
+		}
+		#menu-feast-modern-mobile-menu li a {
+			color: inherit;
+			text-decoration: inherit;
+		}
+	
+		/* The button used to close the mmm */
+		.closebtn {
+			text-decoration: none;
+			float: right;
+			margin-right: 10px;
+			font-size: 50px;
+			font-weight: bold;
+			color: #333;
+			z-index:1001;
+  			top: 0;
+			position: fixed;
+			left: 270px;
+			-webkit-animation-name: closebutton; /* Chrome, Safari, Opera */
+			-webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+			animation-name: closebutton;
+			animation-duration: 1.5s;
+		}
+
+		.closebtn:hover,
+		.closebtn:focus {
+			color: #555;
+			cursor: pointer;
+		}
+
+		.mmmheader {
+			font-size: 25px;
+			color: #FFF;
+			height: 80px;
+			display: flex;
+			justify-content: space-between;
+		}
+		#mmmlogo {	
+			max-width: 200px;	
+			max-height: 70px;	
+		}
+		#feast-mobile-search {
+			margin-bottom: 17px;
+			min-height: 50px;
+			overflow: auto;
+		}
+		#feast-mobile-search input[type=submit] {
+			display: none;
+		}
+		#feast-mobile-search input[type=search] {
+			width: 100%;
+		}	
+
+		#feast-mobile-menu-social-icons {
+			margin-top: 17px;
+		}
+
+		#feast-social .simple-social-icons {
+			list-style: none;
+			margin: 0 !important; 
+		}
+
+		.feastmobilenavbar { 
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 998;
+			width: 100%;
+			height: 80px;
+			padding: 0;
+			margin: 0 auto;
+			box-sizing: border-box;
+			border-top: 1px solid #CCC;
+			border-bottom: 1px solid #CCC;
+			background: #FFF;
+			display: grid;
+			grid-template-columns: repeat(7, minmax(50px, 1fr));
+			text-align: center;
+		}
+		.feastmobilenavbar > div { height: 80px; }
+		.admin-bar .feastmobilenavbar {
+			top: 32px;
+		}
+		@media screen and (max-width:782px) {
+			.admin-bar .feastmobilenavbar {
+				top: 0;
+				position: sticky; 
+			}
+			.admin-bar .site-container, .admin-bar .body-template-content { 
+				margin-top: 0;
+			}
+		}
+		.feastmobilenavbar a img { 
+			margin-bottom: inherit !important; 
+		}
+		.feastmenutoggle, .feastsearchtoggle, .feastsubscribebutton {
+			display: flex;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+		}
+		.feastsearchtoggle svg, .feastmenutoggle svg {
+			width: 30px;
+			height: 30px;
+			padding: 10px;
+			box-sizing: content-box;
+			color: black;
+		}
+		.feastsubscribebutton { 
+   		 	overflow: hidden;
+		}
+		.feastsubscribebutton img {
+			max-width: 90px;
+			padding: 15px;
+			margin: 1px;
+		}
+		.feastsubscribebutton svg {
+			color: #000;
+		}
+				.feastmenulogo {
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			grid-column-end: span 4;
+		}
+		
+		
+				
+		
+		@media only screen and ( max-width: 1199px ) {
+			.feastmenulogo {grid-column-end: span 3; } 
+			.feastsubscribebutton { grid-column-end: span 2; }
+		}
+		@media only screen and (max-width: 359px) { /* 320px fix */ 
+			.feastmobilenavbar { 
+				grid-template-columns: repeat(6, minmax(50px, 1fr)); 
+			} 
+			.feastmenulogo {grid-column-end: span 2; }		}
+		@media only screen and ( min-width: 1200px ) {
+			.feastmobilenavbar { display: none; }
+		}
+		@media only screen and ( max-width: 1199px ) {
+			header.site-header, .nav-primary  { display: none !important; visibility: hidden; }
+			.site-container, .body-template-content {  margin-top: 80px;  /* prevents menu overlapping content */ }
+		}
+	</style>
+		
+	<div class="site-inner"><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><div class="archive-description taxonomy-archive-description taxonomy-description"><h1 class="archive-title">Здравословни рецепти</h1></div><article class="simple-grid one-third odd first post-20858 post type-post status-publish format-standard has-post-thumbnail category-brownies category-keto-recipes tag-cocoa tag-coconut tag-1798 entry" aria-label="Перфектното Кето Брауни"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/best-keto-brownies/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="two plates with brownies on a blue background" data-lazy-srcset="https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-360x480.jpg" /><noscript><img width="360" height="480" src="09/Best-Keto-Brownies-14-360x480.jpg" class="alignleft post-image entry-image" alt="two plates with brownies on a blue background" srcset="https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/best-keto-brownies/">Перфектното Кето Брауни</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-16371 post type-post status-publish format-standard has-post-thumbnail category-sugar-free category-drinks tag-lemon tag-raspberry tag-honey tag-orange entry" aria-label="Малиновa лимонада без захар"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/sugar-free-raspberry-orange-lemonade/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="pink lemonade with lemons and basil aside" data-lazy-srcset="https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-360x480.jpg 360w, https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-720x960.jpg 720w, https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-180x240.jpg 180w, https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-360x480.jpg" /><noscript><img width="360" height="480" src="06/Raspberry-Lemonade-17-360x480.jpg" class="alignleft post-image entry-image" alt="pink lemonade with lemons and basil aside" srcset="https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-360x480.jpg 360w, https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-720x960.jpg 720w, https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-180x240.jpg 180w, https://#/wp-content/uploads/2017/06/Raspberry-Lemonade-17-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/sugar-free-raspberry-orange-lemonade/">Малиновa лимонада без захар</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-19551 post type-post status-publish format-standard has-post-thumbnail category-keto-recipes category-muffins tag-cocoa tag-coconut tag-1798 tag-flax-seeds tag-strawberries entry" aria-label="Кето ягодови къпкейкс с шоколадов маслен крем"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/keto-strawberry-cupcakes/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="three cupcakes in a roll with strawberries behind" data-lazy-srcset="https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-360x480.jpg 360w, https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-720x960.jpg 720w, https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-180x240.jpg 180w, https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-360x480.jpg" /><noscript><img width="360" height="480" src="05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-360x480.jpg" class="alignleft post-image entry-image" alt="three cupcakes in a roll with strawberries behind" srcset="https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-360x480.jpg 360w, https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-720x960.jpg 720w, https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-180x240.jpg 180w, https://#/wp-content/uploads/2021/05/Keto-Strawberry-Cupcakes-Chocolate-Frosting-24-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/keto-strawberry-cupcakes/">Кето ягодови къпкейкс с шоколадов маслен крем</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third first post-19442 post type-post status-publish format-standard has-post-thumbnail category-gluten-sugar-dairy-free category-keto-recipes tag-almonds tag-coconut tag-lemon tag-chocolate-drops entry" aria-label="Кето лимонови блондис {без млечни продукти}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/keto-lemon-blondies/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="a stack of four blondies with milk and lemons aside" data-lazy-srcset="https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-360x480.jpg 360w, https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-720x960.jpg 720w, https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-180x240.jpg 180w, https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-360x480.jpg" /><noscript><img width="360" height="480" src="04/Keto-Lemon-Blondies-17-360x480.jpg" class="alignleft post-image entry-image" alt="a stack of four blondies with milk and lemons aside" srcset="https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-360x480.jpg 360w, https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-720x960.jpg 720w, https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-180x240.jpg 180w, https://#/wp-content/uploads/2021/04/Keto-Lemon-Blondies-17-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/keto-lemon-blondies/">Кето лимонови блондис {без млечни продукти}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-19264 post type-post status-publish format-standard has-post-thumbnail category-sugar-free tag-ice-cream tag-spelt-flour tag-apples entry" aria-label="Здравословен ябълков коблер"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/healthy-apple-cobbler/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-360x480.jpg 360w, https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-720x960.jpg 720w, https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-180x240.jpg 180w, https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-360x480.jpg" /><noscript><img width="360" height="480" src="03/Healthier-Apple-Cobbler-18-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-360x480.jpg 360w, https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-720x960.jpg 720w, https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-180x240.jpg 180w, https://#/wp-content/uploads/2021/03/Healthier-Apple-Cobbler-18-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/healthy-apple-cobbler/">Здравословен ябълков коблер</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-19008 post type-post status-publish format-standard has-post-thumbnail category-vegan-recipes category-desserts-in-cups tag-blueberries tag-cocoa tag-1753 tag-maple-syrup tag-chia tag-strawberries entry" aria-label="Шоколадов пудинг трайфъл с чия и кашу"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/chocolate-chia-pudding-trifle/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-360x480.jpg 360w, https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-720x960.jpg 720w, https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-180x240.jpg 180w, https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-360x480.jpg" /><noscript><img width="360" height="480" src="03/Chocolate-Chia-Pudding-Trifle-16-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-360x480.jpg 360w, https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-720x960.jpg 720w, https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-180x240.jpg 180w, https://#/wp-content/uploads/2021/03/Chocolate-Chia-Pudding-Trifle-16-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/chocolate-chia-pudding-trifle/">Шоколадов пудинг трайфъл с чия и кашу</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd first post-18844 post type-post status-publish format-standard has-post-thumbnail category-desserts-in-cups category-keto-recipes category-cheesecakes tag-almonds tag-blueberries tag-cream-cheese tag-1798 tag-heavy-cream tag-chocolate entry" aria-label="Шоколадов чийзкейк в чаши {кето}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/no-bake-chocolate-cheesecake-in-glasses/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="two glasses of chocolate no-bake cheesecake" data-lazy-srcset="https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-360x480.jpg 360w, https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-720x960.jpg 720w, https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-180x240.jpg 180w, https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-360x480.jpg" /><noscript><img width="360" height="480" src="02/Keto-Cheesecakes-in-Glasses-6-360x480.jpg" class="alignleft post-image entry-image" alt="two glasses of chocolate no-bake cheesecake" srcset="https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-360x480.jpg 360w, https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-720x960.jpg 720w, https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-180x240.jpg 180w, https://#/wp-content/uploads/2021/02/Keto-Cheesecakes-in-Glasses-6-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/no-bake-chocolate-cheesecake-in-glasses/">Шоколадов чийзкейк в чаши {кето}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-18666 post type-post status-publish format-standard has-post-thumbnail category-keto-recipes category-layer-cakes tag-almonds-bg tag-carrots-bg tag-cinnamon-bg tag-coconut-bg tag-walnuts-bg tag-xylitol-bg entry" aria-label="Kето морковена торта с кокосова пана кота {без млечни продукти}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/keto-carrot-cake-with-coconut-panna-cotta/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="a woman serving a layer cake" data-lazy-srcset="https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-360x480.jpg" /><noscript><img width="360" height="480" src="01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-360x480.jpg" class="alignleft post-image entry-image" alt="a woman serving a layer cake" srcset="https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/Keto-Carrot-Cake-Coconut-Panna-Cotta-7-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/keto-carrot-cake-with-coconut-panna-cotta/">Kето морковена торта с кокосова пана кота {без млечни продукти}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-18621 post type-post status-publish format-standard has-post-thumbnail category-gluten-sugar-dairy-free category-brownies tag-cocoa tag-coconut tag-1651 tag-chocolate-drops entry" aria-label="Брауни със сладки картофи {без глутен и млечни}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/sweet-potato-brownies/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="a woman taking sweet potato brownies, one bited" data-lazy-srcset="https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-360x480.jpg" /><noscript><img width="360" height="480" src="01/Sweet-Potato-Brownies-18-360x480.jpg" class="alignleft post-image entry-image" alt="a woman taking sweet potato brownies, one bited" srcset="https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/Sweet-Potato-Brownies-18-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/sweet-potato-brownies/">Брауни със сладки картофи {без глутен и млечни}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third first post-17927 post type-post status-publish format-standard has-post-thumbnail category-gluten-sugar-dairy-free category-keto-recipes category-layer-cakes tag-cocoa tag-coconut tag-1798 tag-flax-seeds entry" aria-label="Кето мус торта {без млечни продукти}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/keto-mousse-cake/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-360x480.jpg" /><noscript><img width="360" height="480" src="01/Keto-Mousse-cake-dairy-free-10-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/Keto-Mousse-cake-dairy-free-10-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/keto-mousse-cake/">Кето мус торта {без млечни продукти}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-17921 post type-post status-publish format-standard has-post-thumbnail category-gluten-sugar-dairy-free category-cakes tag-almonds tag-cinnamon tag-oatmeal tag-chia entry" aria-label="Лесен сладкиш с мандарини {без глутен, захар и млечни}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/simple-clementine-cake/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-360x480.jpg" /><noscript><img width="360" height="480" src="01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-360x480.jpg 360w, https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-720x960.jpg 720w, https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-180x240.jpg 180w, https://#/wp-content/uploads/2021/01/SimpleClementine-Cake-Gluten-Sugar-Dairy-Free-10-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/simple-clementine-cake/">Лесен сладкиш с мандарини {без глутен, захар и млечни}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-17914 post type-post status-publish format-standard has-post-thumbnail category-sugar-free category-layer-cakes tag-sour-cream tag-cocoa tag-coconut tag-flax-seeds tag-mascarpone tag-spelt-flour tag-chocolate-drops entry" aria-label="Здравословна торта-пинята"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/healthy-pinata-cake/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-360x480.jpg 360w, https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-720x960.jpg 720w, https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-180x240.jpg 180w, https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-360x480.jpg" /><noscript><img width="360" height="480" src="12/Healthy-Pinata-Cake-23-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-360x480.jpg 360w, https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-720x960.jpg 720w, https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-180x240.jpg 180w, https://#/wp-content/uploads/2020/12/Healthy-Pinata-Cake-23-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/healthy-pinata-cake/">Здравословна торта-пинята</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd first post-17894 post type-post status-publish format-standard has-post-thumbnail category-vegan-recipes category-cookies tag-ginger tag-cocoa tag-cinnamon tag-coconut tag-chocolate-drops entry" aria-label="Двойно шоколадови сладки {Веган и без глутен}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/vegan-double-chocolate-cookies-gluten-free/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-360x480.jpg 360w, https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-720x960.jpg 720w, https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-180x240.jpg 180w, https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-360x480.jpg" /><noscript><img width="360" height="480" src="12/Double-Chocolate-Cookies-Vegan-10-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-360x480.jpg 360w, https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-720x960.jpg 720w, https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-180x240.jpg 180w, https://#/wp-content/uploads/2020/12/Double-Chocolate-Cookies-Vegan-10-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/vegan-double-chocolate-cookies-gluten-free/">Двойно шоколадови сладки {Веган и без глутен}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-17875 post type-post status-publish format-standard has-post-thumbnail category-vegan-recipes category-desserts-in-cups tag-cinnamon tag-pears tag-honey tag-chocolate entry" aria-label="Поширани круши с шоколадов мус"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/poached-pears-with-chocolate-mousse/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-360x480.jpg 360w, https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-720x960.jpg 720w, https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-180x240.jpg 180w, https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-360x480.jpg" /><noscript><img width="360" height="480" src="11/Poached-Pears-with-Chocolate-Mousse-32-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-360x480.jpg 360w, https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-720x960.jpg 720w, https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-180x240.jpg 180w, https://#/wp-content/uploads/2020/11/Poached-Pears-with-Chocolate-Mousse-32-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/poached-pears-with-chocolate-mousse/">Поширани круши с шоколадов мус</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-17863 post type-post status-publish format-standard has-post-thumbnail category-vegan-recipes category-cookies tag-cinnamon tag-chocolate-drops entry" aria-label="Бисквити със зехтин и шоколадови парченца &#8211; веган"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/vegan-olive-oil-cookies/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/10/Vegan-Olive-Oil-Cookies-18-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Vegan-Olive-Oil-Cookies-18-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Vegan-Olive-Oil-Cookies-18-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/10/Vegan-Olive-Oil-Cookies-18-360x480.jpg" /><noscript><img width="360" height="480" src="10/Vegan-Olive-Oil-Cookies-18-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/10/Vegan-Olive-Oil-Cookies-18-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Vegan-Olive-Oil-Cookies-18-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Vegan-Olive-Oil-Cookies-18-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/vegan-olive-oil-cookies/">Бисквити със зехтин и шоколадови парченца &#8211; веган</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third first post-17855 post type-post status-publish format-standard has-post-thumbnail category-sugar-free category-cakes tag-cocoa tag-orange tag-chocolate entry" aria-label="Шоколадов кекс с портокалова глазура"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/chocolate-olive-oil-cake-with-orange-glaze/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-360x480.jpg" /><noscript><img width="360" height="480" src="10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Chocolate-Olive-Oil-Cake-with-Orange-Glaze-12-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/chocolate-olive-oil-cake-with-orange-glaze/">Шоколадов кекс с портокалова глазура</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-17849 post type-post status-publish format-standard has-post-thumbnail category-sugar-free tag-cinnamon tag-honey tag-walnuts tag-apples entry" aria-label="Карамелизиран ябълков пудинг"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/apple-caramel-pudding/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/10/Apple-Caramel-Pudding-20-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Apple-Caramel-Pudding-20-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Apple-Caramel-Pudding-20-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/10/Apple-Caramel-Pudding-20-360x480.jpg" /><noscript><img width="360" height="480" src="10/Apple-Caramel-Pudding-20-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/10/Apple-Caramel-Pudding-20-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Apple-Caramel-Pudding-20-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Apple-Caramel-Pudding-20-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/apple-caramel-pudding/">Карамелизиран ябълков пудинг</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-17841 post type-post status-publish format-standard has-post-thumbnail category-keto-recipes category-cheesecakes tag-biscuits tag-cream-cheese tag-honey tag-walnuts tag-heavy-cream tag-pumpkin entry" aria-label="Тиквен чийзкейк в купички"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/individual-pumpkin-cheesecakes/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/10/featured-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/featured-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/featured-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/10/featured-360x480.jpg" /><noscript><img width="360" height="480" src="10/featured-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/10/featured-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/featured-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/featured-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/individual-pumpkin-cheesecakes/">Тиквен чийзкейк в купички</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd first post-17835 post type-post status-publish format-standard has-post-thumbnail category-keto-recipes tag-sour-cream tag-pumpkin tag-chocolate entry" aria-label="Кекс с тиква и шоколад {кето}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/chocolate-pumpkin-bread-keto/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/10/Keto-Pumpkin-Bread-10-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Keto-Pumpkin-Bread-10-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Keto-Pumpkin-Bread-10-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/10/Keto-Pumpkin-Bread-10-360x480.jpg" /><noscript><img width="360" height="480" src="10/Keto-Pumpkin-Bread-10-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/10/Keto-Pumpkin-Bread-10-360x480.jpg 360w, https://#/wp-content/uploads/2020/10/Keto-Pumpkin-Bread-10-720x960.jpg 720w, https://#/wp-content/uploads/2020/10/Keto-Pumpkin-Bread-10-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/chocolate-pumpkin-bread-keto/">Кекс с тиква и шоколад {кето}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-17829 post type-post status-publish format-standard has-post-thumbnail category-sugar-free category-brownies tag-cocoa tag-spelt-flour tag-pumpkin tag-chocolate-drops entry" aria-label="Перфектно шоколадово брауни с тиква"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/ultimate-healthy-pumpkin-brownies/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/09/Ultimate-Healthy-Pumpkin-Brownies-28-360x480.jpg 360w, https://#/wp-content/uploads/2020/09/Ultimate-Healthy-Pumpkin-Brownies-28-720x960.jpg 720w, https://#/wp-content/uploads/2020/09/Ultimate-Healthy-Pumpkin-Brownies-28-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/09/Ultimate-Healthy-Pumpkin-Brownies-28-360x480.jpg" /><noscript><img width="360" height="480" src="09/Ultimate-Healthy-Pumpkin-Brownies-28-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/09/Ultimate-Healthy-Pumpkin-Brownies-28-360x480.jpg 360w, https://#/wp-content/uploads/2020/09/Ultimate-Healthy-Pumpkin-Brownies-28-720x960.jpg 720w, https://#/wp-content/uploads/2020/09/Ultimate-Healthy-Pumpkin-Brownies-28-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/ultimate-healthy-pumpkin-brownies/">Перфектно шоколадово брауни с тиква</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-17817 post type-post status-publish format-standard has-post-thumbnail category-keto-recipes category-layer-cakes tag-blueberries tag-sour-cream tag-coconut tag-flax-seeds tag-mascarpone tag-strawberries entry" aria-label="Торта с кашу блатове {нисковъглехидратна}"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/low-carb-vanilla-cashew-cake/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/09/Low-Carb-Vanilla-Cashew-Cake-20-360x480.jpg 360w, https://#/wp-content/uploads/2020/09/Low-Carb-Vanilla-Cashew-Cake-20-720x960.jpg 720w, https://#/wp-content/uploads/2020/09/Low-Carb-Vanilla-Cashew-Cake-20-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/09/Low-Carb-Vanilla-Cashew-Cake-20-360x480.jpg" /><noscript><img width="360" height="480" src="09/Low-Carb-Vanilla-Cashew-Cake-20-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/09/Low-Carb-Vanilla-Cashew-Cake-20-360x480.jpg 360w, https://#/wp-content/uploads/2020/09/Low-Carb-Vanilla-Cashew-Cake-20-720x960.jpg 720w, https://#/wp-content/uploads/2020/09/Low-Carb-Vanilla-Cashew-Cake-20-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/low-carb-vanilla-cashew-cake/">Торта с кашу блатове {нисковъглехидратна}</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third first post-17802 post type-post status-publish format-standard has-post-thumbnail category-no-bake-desserts category-keto-recipes tag-sour-cream tag-cream-cheese tag-walnuts tag-heavy-cream tag-chocolate entry" aria-label="Кето шоколадова лазаня"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/keto-chocolate-delight/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/08/Keto-Chocolate-Delight-13-360x480.jpg 360w, https://#/wp-content/uploads/2020/08/Keto-Chocolate-Delight-13-720x960.jpg 720w, https://#/wp-content/uploads/2020/08/Keto-Chocolate-Delight-13-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/08/Keto-Chocolate-Delight-13-360x480.jpg" /><noscript><img width="360" height="480" src="08/Keto-Chocolate-Delight-13-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/08/Keto-Chocolate-Delight-13-360x480.jpg 360w, https://#/wp-content/uploads/2020/08/Keto-Chocolate-Delight-13-720x960.jpg 720w, https://#/wp-content/uploads/2020/08/Keto-Chocolate-Delight-13-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/keto-chocolate-delight/">Кето шоколадова лазаня</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third odd post-17796 post type-post status-publish format-standard has-post-thumbnail category-cakes category-keto-recipes tag-almonds tag-sour-cream tag-cocoa entry" aria-label="Тексаски шоколадов сладкиш в кето версия"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/keto-texas-sheet-cake/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/08/Keto-Texas-Sheet-Cake-15-360x480.jpg 360w, https://#/wp-content/uploads/2020/08/Keto-Texas-Sheet-Cake-15-720x960.jpg 720w, https://#/wp-content/uploads/2020/08/Keto-Texas-Sheet-Cake-15-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/08/Keto-Texas-Sheet-Cake-15-360x480.jpg" /><noscript><img width="360" height="480" src="08/Keto-Texas-Sheet-Cake-15-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/08/Keto-Texas-Sheet-Cake-15-360x480.jpg 360w, https://#/wp-content/uploads/2020/08/Keto-Texas-Sheet-Cake-15-720x960.jpg 720w, https://#/wp-content/uploads/2020/08/Keto-Texas-Sheet-Cake-15-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/keto-texas-sheet-cake/">Тексаски шоколадов сладкиш в кето версия</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><article class="simple-grid one-third post-17784 post type-post status-publish format-standard has-post-thumbnail category-sugar-free tag-cocoa tag-oatmeal tag-spelt-flour tag-heavy-cream tag-chocolate tag-chocolate-drops entry" aria-label="Сурово бисквитено тесто с домашен шоколад"><header class="entry-header"><a class="entry-image-link" href="https://#/bg/healthy-cookie-dough-bars/" aria-hidden="true" tabindex="-1"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class="alignleft post-image entry-image" alt="" data-lazy-srcset="https://#/wp-content/uploads/2020/07/Healthy-Cookie-Dough-Bars-21-360x480.jpg 360w, https://#/wp-content/uploads/2020/07/Healthy-Cookie-Dough-Bars-21-720x960.jpg 720w, https://#/wp-content/uploads/2020/07/Healthy-Cookie-Dough-Bars-21-180x240.jpg 180w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2020/07/Healthy-Cookie-Dough-Bars-21-360x480.jpg" /><noscript><img width="360" height="480" src="07/Healthy-Cookie-Dough-Bars-21-360x480.jpg" class="alignleft post-image entry-image" alt="" srcset="https://#/wp-content/uploads/2020/07/Healthy-Cookie-Dough-Bars-21-360x480.jpg 360w, https://#/wp-content/uploads/2020/07/Healthy-Cookie-Dough-Bars-21-720x960.jpg 720w, https://#/wp-content/uploads/2020/07/Healthy-Cookie-Dough-Bars-21-180x240.jpg 180w" sizes="(max-width: 360px) 100vw, 360px" /></noscript></a><h2 class="entry-title"><a class="entry-title-link" rel="bookmark" href="https://#/bg/healthy-cookie-dough-bars/">Сурово бисквитено тесто с домашен шоколад</a></h2>
+</header><div class="entry-content"></div><footer class="entry-footer"></footer></article><div class="archive-pagination pagination" role="navigation" aria-label="Pagination"><ul><li class="active" ><a href="index.html" aria-label="Current page" aria-current="page"><span class="screen-reader-text">Go to page</span> 1</a></li>
+<li><a href="page/2/index.html"><span class="screen-reader-text">Go to page</span> 2</a></li>
+<li><a href="page/3/index.html"><span class="screen-reader-text">Go to page</span> 3</a></li>
+<li class="pagination-next"><a href="page/2/index.html" ><span class="screen-reader-text">Go to</span> Next Page &#x000BB;</a></li>
+</ul></div>
+</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="simple-social-icons-2" class="widget simple-social-icons"><div class="widget-wrap"><ul class="aligncenter"><li class="ssi-facebook"><a href="https://facebook.com/daniscookings" ><svg role="img" class="social-facebook" aria-labelledby="social-facebook-2"><title id="social-facebook-2">Facebook</title><use xlink:href="https://#/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-facebook"></use></svg></a></li><li class="ssi-instagram"><a href="https://www.instagram.com/daniscookings" ><svg role="img" class="social-instagram" aria-labelledby="social-instagram-2"><title id="social-instagram-2">Instagram</title><use xlink:href="https://#/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-instagram"></use></svg></a></li><li class="ssi-pinterest"><a href="https://www.pinterest.com/daniscookings" ><svg role="img" class="social-pinterest" aria-labelledby="social-pinterest-2"><title id="social-pinterest-2">Pinterest</title><use xlink:href="https://#/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-pinterest"></use></svg></a></li><li class="ssi-youtube"><a href="https://www.youtube.com/channel/UCKum_NnrynG8f3mAYUlaHqg" ><svg role="img" class="social-youtube" aria-labelledby="social-youtube-2"><title id="social-youtube-2">YouTube</title><use xlink:href="https://#/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-youtube"></use></svg></a></li></ul></div></section>
+<div class='feast-modern-sidebar'>
+<div class="wp-block-group feast-about-author"><div class="wp-block-group__inner-container">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20183%20183'%3E%3C/svg%3E" alt="" class="wp-image-13263" width="183" height="183" data-lazy-src="https://#/wp-content/uploads/2020/01/DSC_3162-2-2.jpg"/><noscript><img src="01/DSC_3162-2-2.jpg" alt="" class="wp-image-13263" width="183" height="183"/></noscript></figure></div>
+
+
+
+<p><strong>Здравейте, аз съм Даниела, </strong>авторът и фотографът зад този блог. Моята цел е да ви помогна да се научите да приготвяте вкусни и красиви десерти в домашни условия - както класически, така и диетични.</p>
+
+
+
+<p class="has-text-align-center"><a href="https://#/bg/about/">Повече за мен →</a></p>
+</div></div>
+
+
+
+<h3 id="h-popular">Нови рецепти</h3>
+
+
+<div class='feast-category-index  feast-recipe-index'><ul class="feast-category-index-list fsri-list feast-grid-half feast-desktop-grid-half"><li class="listing-item"><a href="https://#/bg/best-keto-brownies/" style="text-decoration: none;"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" data-lazy-srcset="https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-360x480.jpg" /><noscript><img width="360" height="480" src="09/Best-Keto-Brownies-14-360x480.jpg" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" srcset="https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Best-Keto-Brownies-14-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript><div class='fsri-title'>Перфектното Кето Брауни</div></a></li><li class="listing-item"><a href="https://#/bg/custard-pudding-cake/" style="text-decoration: none;"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" data-lazy-srcset="https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-360x480.jpg" /><noscript><img width="360" height="480" src="09/Creamy-Custard-Pudding-Cake-4-360x480.jpg" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" srcset="https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Creamy-Custard-Pudding-Cake-4-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript><div class='fsri-title'>Безглутенов крем-сладкиш</div></a></li><li class="listing-item"><a href="https://#/bg/moist-marble-cake/" style="text-decoration: none;"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" data-lazy-srcset="https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-360x480.jpg" /><noscript><img width="360" height="480" src="09/Yogurt-Marble-Cake-16-360x480.jpg" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" srcset="https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-360x480.jpg 360w, https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-720x960.jpg 720w, https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-180x240.jpg 180w, https://#/wp-content/uploads/2021/09/Yogurt-Marble-Cake-16-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript><div class='fsri-title'>Пухкав кекс с кисело мляко</div></a></li><li class="listing-item"><a href="https://#/bg/one-year-in-business/" style="text-decoration: none;"><img width="360" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20360%20480'%3E%3C/svg%3E" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" data-lazy-srcset="https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-360x480.jpg 360w, https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-720x960.jpg 720w, https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-180x240.jpg 180w, https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-640x853.jpg 640w" data-lazy-sizes="(max-width: 360px) 100vw, 360px" data-lazy-src="https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-360x480.jpg" /><noscript><img width="360" height="480" src="08/self-employeed-photographer-and-blogger-3-360x480.jpg" class=" wp-post-image" alt="" data-pin-nopin="true" aria-hidden="true" srcset="https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-360x480.jpg 360w, https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-720x960.jpg 720w, https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-180x240.jpg 180w, https://#/wp-content/uploads/2021/08/self-employeed-photographer-and-blogger-3-640x853.jpg 640w" sizes="(max-width: 360px) 100vw, 360px" /></noscript><div class='fsri-title'>Една година като фотограф и блогър на пълен работен ден</div></a></li></ul></div>
+
+
+<h3>Безплатни пресети за Adobe Lightroom</h3>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://#/bg/free-lightroom-presets-for-food-photography/"><img width="667" height="1000" data-pin-description="Free Lightroom Food Photography Presets" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20667%201000'%3E%3C/svg%3E" alt="texas sheet cake on a plate with lightroom presets banner" class="wp-image-15685" data-lazy-src="https://#/wp-content/uploads/2020/07/free-lightroom-presets.jpg"/><noscript><img width="667" height="1000" data-pin-description="Free Lightroom Food Photography Presets" src="07/free-lightroom-presets.jpg" alt="texas sheet cake on a plate with lightroom presets banner" class="wp-image-15685"/></noscript></a></figure>
+</div><section id="mc4wp_form_widget-4" class="widget widget_mc4wp_form_widget"><div class="widget-wrap"><h3 class="widgettitle widget-title">Не пропускайте рецепта!</h3>
+<script type="rocketlazyloadscript">(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.8.6 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-2392" method="post" data-id="2392" data-name="" ><div class="mc4wp-form-fields"><p class="mdes">Subscribe to the newsletter!</p>
+<p class="mname"><input type="text" name="NAME" placeholder="Name" /></p>
+<p class="memail"><input type="email" id="mc4wp_email" name="EMAIL" placeholder="Email..." required /></p>
+<p class="msubmit"><input type="submit" value="Subscribe" /></p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1633492530" /><input type="hidden" name="_mc4wp_form_id" value="2392" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div></section>
+</aside></div></div><footer class="site-footer"><div class="wrap"><h2 class='screen-reader-text'>Footer</h2>
+<div class='feast-modern-footer'>
+<p class="has-text-align-center"><a href="index.html#" rel="nofollow">↑към началото</a></p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<h3 class="has-text-color" style="color:#3030cc">За блога</h3>
+
+
+
+<ul class="has-text-color" style="color:#3030cc"><li><a href="https://#/bg/privacy-policy/">Поверителност на личните данни</a></li><li><a href="https://#/bg/terms-and-conditions/">Общи условия</a></li></ul>
+</div>
+
+
+
+<div class="wp-block-column">
+<h3 class="has-text-color" style="color:#3030cc">Нюзлетър</h3>
+
+
+
+<ul class="has-text-color" style="color:#3030cc"><li><a href="http://eepurl.com/b6lUUP" target="_blank" rel="noreferrer noopener">Абонирайте се</a> за нови рецепти и новини</li></ul>
+</div>
+
+
+
+<div class="wp-block-column">
+<h3 class="has-text-color" style="color:#3030cc">Контакт</h3>
+
+
+
+<ul class="has-text-color" style="color:#3030cc"><li><a href="https://#/bg/work-with-me/">Сътрудничество</a></li><li><a href="https://#/bg/about/">За мен</a></li></ul>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center has-text-color" style="color:#3030cc">Copyright © 2021 <strong>Dani's Cookings</strong></p>
+</div></div></footer></div><script type="rocketlazyloadscript">(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script><style type="text/css" media="screen"> #simple-social-icons-3 ul li a, #simple-social-icons-3 ul li a:hover, #simple-social-icons-3 ul li a:focus { background-color: #ffffff !important; border-radius: 60px; color: #333572 !important; border: 0px #333572 solid !important; font-size: 30px; padding: 15px; }  #simple-social-icons-3 ul li a:hover, #simple-social-icons-3 ul li a:focus { background-color: #756ea6 !important; border-color: #756ea6 !important; color: #ffffff !important; }  #simple-social-icons-3 ul li a:focus { outline: 1px dotted #756ea6 !important; } #simple-social-icons-2 ul li a, #simple-social-icons-2 ul li a:hover, #simple-social-icons-2 ul li a:focus { background-color: #ffffff !important; border-radius: 27px; color: #333572 !important; border: 1px #333572 solid !important; font-size: 14px; padding: 7px; }  #simple-social-icons-2 ul li a:hover, #simple-social-icons-2 ul li a:focus { background-color: #756ea6 !important; border-color: #756ea6 !important; color: #ffffff !important; }  #simple-social-icons-2 ul li a:focus { outline: 1px dotted #756ea6 !important; }</style><script type='text/javascript' src='lib/js/skip-links.min.js@ver=3.3.5' id='skip-links-js' defer></script>
+<script data-minify="1" type='text/javascript' defer src='1/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js@ver=1632422492' id='mc4wp-forms-api-js'></script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="assets/js/lazyload/16.1/lazyload.min.js"></script><script type="rocketlazyloadscript">"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel='stylesheet' id='foodie-pro-theme-css'  href='style.css@ver=4.4.0.css' type='text/css' media='all' /><link rel='stylesheet' id='wp-block-library-css'  href='block-library/style.min.css@ver=5.8.1.css' type='text/css' media='all' /><link rel='stylesheet' id='dpsp-frontend-style-pro-css'  href='assets/dist/style-frontend-pro.2.14.1.css@ver=2.14.1.css' type='text/css' media='all' /><link rel='stylesheet' id='wpml-menu-item-0-css'  href='templates/language-switchers/menu-item/style.min.css@ver=1.css' type='text/css' media='all' /><link rel='stylesheet' id='simple-social-icons-font-css'  href='css/style.css@ver=3.0.2.css' type='text/css' media='all' /></noscript></body></html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
